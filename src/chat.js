@@ -34,7 +34,7 @@ function Chat( timestamp) {
        <Avatar src={`https://avatars.dicebear.com/api/micah/nirmal${seed}.svg`} />
         <div className="Chat__headerinfo">
           <h3>Nirmalraj Joseph</h3>
-          <p>Last seen at ...</p>
+          <p>Last seen today at ...</p>
         </div>
         <div className="Chat__headerRight">
           <IconButton>

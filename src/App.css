@@ -1,10 +1,15 @@
 .App {
   display: grid;
   place-items: center;
-    /* background-color: #00bfa5; */
-    /* background: linear-gradient( 30% , #00bfa5 , #ededed  */
-    background: repeating-linear-gradient( #00bfa5 , white  );
+  background :  #00bfa5 ;
+  
 }
+.App__head {
+  display: grid;
+  place-items: center;
+  background :  white ;
+}
+
 
 .body_app{
   display: flex;

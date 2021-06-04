@@ -1,21 +1,20 @@
-
-import React from 'react';
-import './App.css';
-// import { Button } from '@material-ui/core';
-import Sidebar from './Sidebar';
+import React from "react";
+import "./App.css";
+import Sidebar from "./Sidebar";
 import Chat from "./chat";
-
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 function App() {
   return (
-    <div  className="App">
+    <div className="App__head">
+      <div className="App">
+     <WhatsAppIcon />
         <h1>whatsapp chat </h1>
-         <div className="body_app">
-         <Sidebar />
-         <Chat />
-
-         </div>
-      
+        <div className="body_app">
+          <Sidebar />
+          <Chat />
+        </div>
+      </div>
     </div>
   );
 }

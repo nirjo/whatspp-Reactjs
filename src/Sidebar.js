@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Avatar, IconButton } from "@material-ui/core";
 import DonutLargeIcon from "@material-ui/icons/DonutLarge";
 import ChatIcon from "@material-ui/icons/Chat";
@@ -8,11 +8,16 @@ import SearchIcon from "@material-ui/icons/Search";
 import "./Sidebar.css";
 import Sidebarchat from "./Sidebarchat";
 
-function Sidebar() {
+function Sidebar()  {
+    const [seed, setSeed] = useState("");
+
+  useEffect(() => {
+    setSeed(Math.floor(Math.random() * 5000));
+  }, []);
   return (
     <div className="sidebar">
       <div className="sidebar_header">
-        <Avatar />
+        <Avatar src={`https://avatars.dicebear.com/api/avataaars/nirmal${seed}.svg`} />
         <chat />
         <div className="sidebar_headerRight">
           <IconButton>
