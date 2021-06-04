@@ -1,6 +1,5 @@
 .Chat{
           flex:0.65 ;
-          /* display: flex; */
 }
 .Chat__header{
           padding: 20px;
@@ -30,10 +29,15 @@
 }
 .Chat__name {
         position :absolute;
-        top: 0px;
+        top: -15px;
         font-weight: 800;
         font-size: xx-small;
 }
+.Chat__receiver {
+        margin-left:auto ;
+        background-color: #dcf8cd;
+}
+
 
 .Chat__timestamp {
      margin-left: 10px;
@@ -48,11 +52,11 @@
 }
 .Chat__body {
         flex: 1;
-        background-image: url("http://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+        background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
 
         background-repeat: repeat;
         background-position: center;
         padding: 30px;
-        overflow: scroll;
+        overflow:scroll;
 }
 
