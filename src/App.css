@@ -1,7 +1,7 @@
 .App {
   display: grid;
   place-items: center;
-  background-color:#1b9a59;
+    background-color: #00bfa5;
   height: 100vh;
 }
 .body_app{

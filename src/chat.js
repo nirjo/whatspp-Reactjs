@@ -30,7 +30,7 @@ function Chat() {
     <div className="Chat">
       <div className="Chat__header">
         <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
-        <div className="Chat__headerInfo">
+        <div className="Chat__headerinfo">
           <h3>Room name</h3>
           <p>Last seen at ...</p>
         </div>
@@ -55,8 +55,9 @@ function Chat() {
         </p>
       </div>
 
-      <div className="Chat__footer"> </div>
+      <div className="Chat__footer"> 
       <InsertEmoticonIcon />
+      <AttachFileIcon />
       <form>
       <input value={input}
        onChange={(e) => setInput(e.target.value)} 
@@ -66,6 +67,7 @@ function Chat() {
       </form>
       <MicIcon />
 
+    </div>
     </div>
   );
 }

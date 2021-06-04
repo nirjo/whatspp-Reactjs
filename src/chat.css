@@ -1,18 +1,18 @@
 .Chat{
-          flex:1;
+          flex:0.65;
  width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow:hidden;
   min-width: 550px;
 }
 .Chat__header{
-         height: 58px;
-  width: 100%;
-  background-color: #ededed;
+      
+  padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between
+  border-bottom: 1px solid lightgrey;
+ 
 }
 .Chat__headerinfo{
           flex:1;
@@ -24,6 +24,11 @@
 }
 .Chat__headerinfo > p {
         color: gray;
+}
+.Chat__headerRight {
+        display: flex;
+        justify-content: space-between;
+        min-width: 100px;
 }
 .Chat__message {
         position: relative;
@@ -42,7 +47,7 @@
 }
 .Chat__receiver {
         margin-left:auto ;
-        background-color: #dcf8cd;
+        background-color: #dcf8c6;
 }
 
 
@@ -51,12 +56,12 @@
      font-size: xx-small;
 }
 
-
+/* 
 .Chat__headerRight {
         display: flex;
         justify-content: space-between;
         min-width: 100px;
-}
+} */
 .Chat__body {
         
          background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
@@ -64,7 +69,7 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-
+ 
   }
         
 .Chat__footer {
@@ -73,11 +78,15 @@
         align-items: center;
         height: 62px;
         border-top: 1px solid lightgrey;
+  width: 100%;
+  background-color: #ededed;
+  
+  
 }
 .Chat__footer > form {
         flex: 1;
         display: flex;
-        background-color: blue;
+        background-color:lightgrey;
 }
 .Chat__footer > form > input {
         flex: 1;
