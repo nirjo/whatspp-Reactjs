@@ -9,7 +9,7 @@ import Chat from "./chat";
 function App() {
   return (
     <div  className="App">
-        <h1>whatapp chat clone</h1>
+        <h1>whatapp chat </h1>
          <div className="body_app">
          <Sidebar />
          <Chat />

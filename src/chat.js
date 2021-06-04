@@ -11,7 +11,8 @@ import MicIcon from "@material-ui/icons/Mic";
 import "./chat.css";
 
 // add props addNewChat
-function Chat() {
+function Chat( timestamp) {
+          console.log(timestamp);
  const [input, setInput] = useState("");
 
   const [seed, setSeed] = useState("");
