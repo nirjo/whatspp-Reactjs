@@ -1,10 +1,10 @@
 .Chat{
           flex:0.65;
- width: 100%;
+ /* width: 100%; */
   display: flex;
   flex-direction: column;
-  overflow:hidden;
-  min-width: 550px;
+  /* overflow:hidden;
+  min-width: 550px; */
 }
 .Chat__header{
       
@@ -41,7 +41,7 @@
 }
 .Chat__name {
         position :absolute;
-        top: -15px;
+        top: 0px;
         font-weight: 800;
         font-size: xx-small;
 }
