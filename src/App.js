@@ -2,15 +2,15 @@
 import React from 'react';
 import './App.css';
 // import { Button } from '@material-ui/core';
-
+import Sidebar from './Sidebar';
 
 
 function App() {
   return (
     <div  className="App">
-        <h1>Lets buid whatapp chat clone</h1>
+        <h1>whatapp chat clone</h1>
          <div className="body_app">
-         {/*sidebar */}
+         <Sidebar />
                   {/*chat */}
 
          </div>
