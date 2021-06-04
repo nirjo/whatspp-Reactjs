@@ -29,10 +29,11 @@ function Chat( timestamp) {
 
   return (
     <div className="Chat">
+     
       <div className="Chat__header">
-        <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
+       <Avatar src={`https://avatars.dicebear.com/api/micah/nirmal${seed}.svg`} />
         <div className="Chat__headerinfo">
-          <h3>Room name</h3>
+          <h3>Nirmalraj Joseph</h3>
           <p>Last seen at ...</p>
         </div>
         <div className="Chat__headerRight">
@@ -46,13 +47,16 @@ function Chat( timestamp) {
             <MoreVertIcon />
           </IconButton>
         </div>
+        
       </div>
 
       <div className="Chat__body">
         <p className={`Chat__message ${true &&'chat__receiver'}`}>
+       
           <span className=" Chat__name "> Nirmal </span>
           Hey Guys
-          <span className="Chat_timestamp">7:09pm</span>
+          <span 
+          className="Chat_timestamp">7:09pm</span>
         </p>
         <p className={`Chat__message ${true &&'chat__receiver'}`}>
           <span className=" Chat__name "> Nirmal </span>

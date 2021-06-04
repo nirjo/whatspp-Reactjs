@@ -55,7 +55,13 @@
         height: auto;
         align-self: flex-start;
 }
-
+.Chat__DateMessage {
+font-size: 11px;
+  color: gray;
+  font-weight: normal;
+  margin-top: 10px;
+  align-self: flex-end;
+  }
 .Chat__name {
         position: absolute;
         top: -15px;
