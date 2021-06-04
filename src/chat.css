@@ -19,6 +19,28 @@
 .Chat__headerinfo > p {
         color: gray;
 }
+.Chat__message {
+        position: relative;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 10px;
+        width: fit-content;
+        background-color: #ffffff;
+        margin-bottom: 30px;
+}
+.Chat__name {
+        position :absolute;
+        top: 0px;
+        font-weight: 800;
+        font-size: xx-small;
+}
+
+.Chat__timestamp {
+     margin-left: 10px;
+     font-size: xx-small;
+}
+
+
 .Chat__headerRight {
         display: flex;
         justify-content: space-between;
@@ -27,6 +49,7 @@
 .Chat__body {
         flex: 1;
         background-image: url("http://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+
         background-repeat: repeat;
         background-position: center;
         padding: 30px;

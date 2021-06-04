@@ -40,7 +40,18 @@ function Chat() {
       
       </div>
       </div>
-      <div className="Chat__body"> </div>
+      <div className="Chat__body"> 
+   <p className="Chat__message">
+   <span className =" Chat__name"> Nirmal </span>
+    Hey Guys 
+    <span
+     className="Chat_timestamp" >7:09pm</
+     span>
+    
+   </p>
+
+      
+      </div>
        <div className="Chat__footer"> </div>
       </div>
   );
