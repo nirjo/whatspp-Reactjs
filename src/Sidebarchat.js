@@ -1,27 +1,37 @@
-import React , { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import { Avatar } from "@material-ui/core";
 
-import './Sidebarchat.css';
+import "./Sidebarchat.css";
 
+// add props addNewChat
+function Sidebarchat({ addNewChat }) {
+  const [seed, setSeed] = useState("");
 
- function Sidebarchat() {
- const [seed, setSeed] = useState ("");
+  useEffect(() => {
+    setSeed(Math.floor(Math.random() * 5000));
+  }, []);
 
- useEffect(() => {
-         setSeed(Math.floor(Math.random() * 5000))
-}, []);
+  const createChat = () => {
+    const rootName = prompt("Please enter name for chat");
+    if (rootName) {
+      // do some stuff...
+    }
+  };
 
-          return (
-                    <div className="SidebarChat">
-<Avatar src= {`https://avatars.dicebear.com/api/human/${seed}.svg`} />
-<div className ="sidebarchat_info">
-<h2>Room name</h2>
-<p>Last message...</p>
-
-</div>
-</div>
-
-          )
+  return !addNewChat ? (
+    <div className="sidebarChat">
+      <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
+      <div className="sidebarChat__info">
+        <h2>Room name</h2>
+        <p>Last message...</p>
+      </div>
+    </div>
+  ) : (
+    <div onClick={createChat}
+     className="sidebarChart">
+      <h2>Add new Chat</h2>
+    </div>
+  );
 }
 
-export default Sidebarchat
+export default Sidebarchat;
